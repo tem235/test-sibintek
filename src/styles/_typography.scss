@@ -1,0 +1,41 @@
+@import "varaiables";
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 17px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+.text-l {
+  font-size: 34px;
+}
+
+.text-m {
+  font-size: 17px;
+}
+
+.text-s {
+  font-size: 16px;
+}
+
+.text-color--accent {
+  color: $accent;
+}

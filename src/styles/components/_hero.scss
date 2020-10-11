@@ -1,0 +1,14 @@
+.hero {
+
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+
+    &-img {
+      display: none;
+    }
+
+  }
+
+}

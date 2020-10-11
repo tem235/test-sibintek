@@ -1,0 +1,62 @@
+@import "varaiables";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $background;
+  color: $primary;
+  font-family: 'IBM Plex Mono', serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+.main {
+  padding: 0 10%;
+}
+
+.section {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 40px;
+  border: 2px solid $primary;
+  color: #fff;
+  background: $background;
+  font-size: 24px;
+  font-family: 'IBM Plex Mono', serif;
+  cursor: pointer;
+  transition: .5s;
+
+  &:hover {
+    background: $primary;
+    color: $background;
+    transition: .5s;
+  }
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 2px solid $primary;
+  color: $primary;
+  background: $background;
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,23 @@
+.about {
+
+}
+
+@media screen and (max-width: 900px) {
+  .about {
+    height: auto;
+    flex-direction: column;
+
+    &-info {
+      order: 2;
+    }
+
+    &-img {
+      order: 1;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+}
