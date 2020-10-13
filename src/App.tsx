@@ -8,20 +8,26 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 
-const App = () => (
-    <>
-        {/*<Header/>*/}
-        <div className={'main'}>
-            <Hero/>
-            <About/>
-            <Skills/>
-            <Portfolio/>
-            <Contacts/>
-        </div>
-        {/*<Footer/>*/}
-        {/*<Nav/>*/}
-    </>
+import store from './store'
 
-);
+
+const App = () => {
+
+    return (
+        <>
+            {/*<Header/>*/}
+            <div className={'main'}>
+                <Hero/>
+                <About/>
+                <Skills/>
+                <Portfolio/>
+                <Contacts/>
+            </div>
+            {/*<Footer/>*/}
+            {/*<Nav/>*/}
+        </>
+    )
+}
+
 
 export default App;

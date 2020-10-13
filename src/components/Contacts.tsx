@@ -25,6 +25,7 @@ const Contacts = () => (
                     <a href={'mailto:tem235@gmail.com'}>tem235@gmail.com</a>
                 </div>
             </div>
+
         </div>
     </div>
 );

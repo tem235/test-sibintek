@@ -5,6 +5,18 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    &-info {
+      flex: 1;
+    }
+
+    &-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+
   }
 }
 
@@ -21,7 +33,7 @@
       flex-direction: column;
 
       &-img {
-
+        display: none;
         img {
           width: 100%;
         }

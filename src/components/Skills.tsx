@@ -1,21 +1,25 @@
 import * as React from "react";
+import {inject, observer} from "mobx-react";
 
-const Skills = () => (
-    <div id={'skills'} className='section skills'>
-        <h1>My Skills</h1>
+const Skills = ({store}: any) => {
 
-        <div className={'skills-list'}>
-            <p>- Adaptive and responsive layout</p>
-            <p>- Figma</p>
-            <p>- Version Control</p>
-            <p>- Databases</p>
-            <p>- JavaScript</p>
-            <p>- Figma</p>
-            <p>- Version Control</p>
-            <p>- Databases</p>
+    React.useEffect(() => {
+        store.getSkills()
+    }, [store]);
+
+
+    return (
+        <div id={'skills'} className='section skills'>
+            <h1>My Skills</h1>
+
+            <div className={'skills-list'}>
+                {store.skills.map((skill: any) => {
+                    return <p key={skill.id}>- {skill.text}</p>
+                })}
+            </div>
         </div>
+    )
 
-    </div>
-);
+}
 
-export default Skills;
+export default inject(({store}) => ({store}))(observer(Skills));
