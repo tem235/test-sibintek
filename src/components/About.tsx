@@ -1,6 +1,7 @@
 import * as React from "react";
 
 const About = () => (
+
     <div id={'about'} className='section about'>
         <div className="about-info">
             <h1>Timur Yunusov</h1>
@@ -10,11 +11,11 @@ const About = () => (
                 Participated in the development:
                 <ul>
                     <li>Kimmeria Films</li>
-                    <li>Devongroup.ru</li>
+                    <li>Devongroup</li>
                     <li>Getbett</li>
                     <li>AcousticPro</li>
                     <li>Papacargo</li>
-                    <li>Finuchet.info</li>
+                    <li>Finuchet</li>
                     <li>MigranStudio</li>
                 </ul>
             </p>
