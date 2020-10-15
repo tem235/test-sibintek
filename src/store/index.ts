@@ -1,4 +1,4 @@
-import {observable, action, makeObservable} from 'mobx';
+import {observable, action, makeObservable, runInAction} from 'mobx';
 
 import server from "../server";
 
@@ -24,12 +24,12 @@ class Store {
         makeObservable(this);
     }
 
-    @action
     async getSkills() {
         const res = await fetch('/api/skills')
         const {skills} = await res.json()
-        this.skills = skills
-        console.log('wtf mobX ?', this.skills)
+        runInAction(() => {
+            this.skills = skills;
+        })
     }
 
 
