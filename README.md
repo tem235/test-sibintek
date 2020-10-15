@@ -16,7 +16,7 @@
 - [ ] Разместить результат на `GitHub Pages`
 - [x] Использовать `Grid Layout`
 - [x] Использовать `Flexbox`
-- [x] Никаких `CSS`-фреймворков
+- [ ] Никаких `CSS`-фреймворков
 - [x] Использовать `SVG` иконки
 - [ ] CRUD `Promise`, `Async/await`, запрашивая с помощью `Fetch` какой-либо исходный `json`-файл при открытии сайта
 - [ ] Иммитация бэкенда [Mirage.js](https://github.com/miragejs/miragejs)
