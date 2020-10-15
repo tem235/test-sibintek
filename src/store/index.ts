@@ -1,4 +1,4 @@
-import {observable, action} from 'mobx';
+import {observable, action, makeObservable} from 'mobx';
 
 import server from "../server";
 
@@ -19,6 +19,10 @@ class Store {
         {id: 9, text: "WebSockets"},
         {id: 10, text: "Webpack"},
     ]
+
+    constructor() {
+        makeObservable(this);
+    }
 
     @action
     async getSkills() {

@@ -27,9 +27,3 @@
 - [ ] Добавить полученную на предыдущем этапе сборку проекта в `GitHub CI (GitHub Actions)`
 - [ ] Реализовать вариант Темной темы для сайта
 - [ ] Arkanoid game
-
-### Проблемы 
-
-После получения данных с сервера [компонент](https://github.com/tem235/test-sibintek/blob/main/src/components/Skills.tsx) не обновляется, но при этом есть изменение в самом [сторе](https://github.com/tem235/test-sibintek/blob/main/src/store/index.ts)
-Иными словами не работает реактивность 
-Пример как это должно работать в [видео](https://youtu.be/3Gt-Cxjld3g)
