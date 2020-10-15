@@ -1,4 +1,4 @@
-import {observable, action} from 'mobx';
+import {observable, action, makeObservable, runInAction} from 'mobx';
 
 import server from "../server";
 
@@ -20,12 +20,16 @@ class Store {
         {id: 10, text: "Webpack"},
     ]
 
-    @action
+    constructor() {
+        makeObservable(this);
+    }
+
     async getSkills() {
         const res = await fetch('/api/skills')
         const {skills} = await res.json()
-        this.skills = skills
-        console.log('wtf mobX ?', this.skills)
+        runInAction(() => {
+            this.skills = skills;
+        })
     }
 
 

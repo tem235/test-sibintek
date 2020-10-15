@@ -5,7 +5,7 @@ const Skills = ({store}: any) => {
 
     React.useEffect(() => {
         store.getSkills()
-    }, [store]);
+    }, []);
 
 
     return (
